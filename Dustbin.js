@@ -4,8 +4,8 @@ class Dustbin
 	{
 		this.x=x;
 		this.y=y;
-		this.dustbinWidth=200;
-		this.dustbinHeight=100;
+		this.dustbinWidth=230;
+		this.dustbinHeight=310;
 		this.wallThickness=20;
 		this.angle=0;	
 		
@@ -25,6 +25,9 @@ class Dustbin
 	}
 	display()
 	{
+
+			image(this.image,462,275);
+
 			var posBottom=this.bottomBody.position;
 			var posLeft=this.leftWallBody.position;
 			var posRight=this.rightWallBody.position;
@@ -36,31 +39,35 @@ class Dustbin
 			rectMode(CENTER)
 			//strokeWeight(4);
 			angleMode(RADIANS)
-			fill(255)
-			stroke(255)
+			fill(1,134,1)
+			stroke(1,134,1)
 			rotate(this.angle)
 			rect(0,0,this.wallThickness, this.dustbinHeight);
+			//image(this.image,0,0,this.wallThickness, this.dustbinHeight);
 			pop()
 
 			push()
 			translate(posRight.x, posRight.y);
 			rectMode(CENTER)
 			//strokeWeight(4);
-			stroke(255)
+			stroke(1,134,1)
 			angleMode(RADIANS)
-			fill(255)
+			fill(1,134,1)
 			rotate(-1*this.angle)
 			rect(0,0,this.wallThickness, this.dustbinHeight);
+			//image(this.image,0,0,this.wallThickness, this.dustbinHeight);
 			pop()
 
 			push()
 			translate(posBottom.x, posBottom.y);
-			rectMode(CENTER)
+			//rectMode(CENTER)
 			//strokeWeight(4);
-			stroke(255)
-			angleMode(RADIANS)
-			fill(255)
+			stroke(1,134,1)
+			//angleMode(RADIANS)
+			fill(1,134,1)
 			rect(0,0,this.dustbinWidth, this.wallThickness);
+			//imageMode(CENTER);
+			//image(this.image,-100,-150,this.dustbinWidth, this.dustbinHeight);
 			pop()
 			
 	}

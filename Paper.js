@@ -1,7 +1,7 @@
 class Paper{
 constructor(x,y) {
     var options = {
-        isStatic:false,
+        isStatic: false,
         restitution:0.3,
         friction:0.5,
         density:1.2
@@ -15,11 +15,17 @@ constructor(x,y) {
     World.add(world, this.body);
 }
 display() {
+
+    
+
 var pos = this.body.position;
       push();
-      translate(pos.x, pos.x);
-      ellipseMode(CENTER);
-      ellipse(0,0,this.width,this.height);
+      translate(pos.x, pos.y);
+      //ellipseMode(CENTER);
+     // ellipse(0,0,this.width,this.height);
+      imageMode(CENTER);
+      image(this.image,0,0,this.width,this.height)
       pop();
+
 }
 }
