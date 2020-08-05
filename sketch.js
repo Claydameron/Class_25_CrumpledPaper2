@@ -16,8 +16,8 @@ rectMode(CENTER);
 	engine = Engine.create();
 	world = engine.world;
 
-	paper = new Paper(200,650);
-	dustbin = new Dustbin(1200,650);
+	paper = new Paper(200,652);
+	dustbin = new Dustbin(1200,645);
 
 	ground = Bodies.rectangle(width/2, 670, width, 20 , {isStatic:true} );
  	World.add(world, ground);

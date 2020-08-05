@@ -23,9 +23,9 @@ class Paper{
           stroke("black");
           fill("lightBlue");
           //ellipseMode(CENTER);
-          //ellipse(0,0,this.width,this.height);
+         // ellipse(0,0,this.width,this.height);
           imageMode(CENTER);
-          image(this.image,0,0,this,width,this.height);
+          image(this.image,0,0,this.width,this.height);
           pop();
 
           console.log(pos.x,pos.y);

@@ -40,7 +40,7 @@ class Dustbin
 			//strokeWeight(4);
 			angleMode(RADIANS)
 			fill(17,126,2)
-			
+			//image(this.image,1062.5,330);
 			stroke(17,126,2)
 			rotate(this.angle)
 			rect(0,0,this.wallThickness, this.dustbinHeight);
